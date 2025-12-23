@@ -787,5 +787,20 @@ export default function FinanceSubjectPage() {
     );
   }
 
-  return null;
+  {/* Game Intro Modal */}
+  return (
+    <>
+      {selectedGame && (
+        <GameIntroModal
+          isOpen={showIntro}
+          config={{
+            ...selectedGame.introConfig,
+            gameIcon: selectedGame.icon,
+          }}
+          onStartGame={handleStartGame}
+          onGoBack={handleGoBack}
+        />
+      )}
+    </>
+  );
 }
