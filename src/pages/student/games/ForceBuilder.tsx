@@ -442,7 +442,7 @@ export default function ForceBuilder() {
             )}
 
             {/* Stats */}
-            <div className="text-sm text-gray-600 text-center">
+            <div className="text-sm text-muted-foreground text-center">
               Total Attempts: {attempts}
             </div>
           </div>
