@@ -323,7 +323,7 @@ const passiveLearningChapters: PassiveLearningChapter[] = [
 type LearningMode = "landing" | "active" | "passive" | "gamified";
 
 export default function FinanceSubjectPage() {
-  const [learningMode, setLearningMode] = useState<LearningMode>("landing");
+  const [learningMode, setLearningMode] = useState<LearningMode>("active");
   const [selectedGame, setSelectedGame] = useState<GameCard | null>(null);
   const [showIntro, setShowIntro] = useState(false);
   const [playingGame, setPlayingGame] = useState<GameCard | null>(null);
