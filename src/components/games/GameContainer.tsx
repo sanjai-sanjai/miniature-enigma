@@ -112,7 +112,7 @@ export function GameContainer({
   }, []);
 
   const handleExitClick = () => {
-    if (isFullscreen) {
+    if (isFullscreen || isExpandedView) {
       setShowExitConfirm(true);
     } else {
       onExit();
@@ -124,6 +124,7 @@ export function GameContainer({
       await document.exitFullscreen();
     }
     setIsFullscreen(false);
+    setIsExpandedView(false);
     document.documentElement.style.overflow = "";
     document.body.style.overflow = "";
     onExit();
