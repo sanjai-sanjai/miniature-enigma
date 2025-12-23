@@ -1,11 +1,7 @@
 import { SubjectLayout } from "@/components/student/SubjectLayout";
 import { GameMissionCard } from "@/components/student/GameMissionCard";
 import {
-  EquationBalance,
   FractionForge,
-  PatternLock,
-  GeometryBuilder,
-  ProbabilityRun,
   PatternMaster,
   VillageBudgetPlanner,
   MathHeist,
@@ -16,11 +12,7 @@ import {
 } from "@/components/games";
 import {
   Calculator,
-  Scale,
   PieChart,
-  Lock,
-  Square,
-  Zap,
   Puzzle,
   PiggyBank,
   Vault,
