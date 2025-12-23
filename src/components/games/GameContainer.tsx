@@ -133,12 +133,12 @@ export function GameContainer({
   const isInExpandedMode = isFullscreen || isExpandedView;
 
   return (
-    <div ref={containerRef} className="w-full">
+    <div ref={containerRef} className="w-full mx-auto">
       {/* Game Canvas Container */}
       <div
         data-game-canvas
-        className={`w-full bg-gradient-to-b from-background to-muted/30 rounded-2xl overflow-hidden ${
-          isExpandedView ? "fixed inset-0 z-50 rounded-none" : ""
+        className={`w-full bg-gradient-to-b from-background to-muted/30 rounded-2xl overflow-hidden border border-border/50 ${
+          isExpandedView ? "fixed inset-0 z-50 rounded-none border-0" : ""
         }`}
       >
         <div className="relative w-full" style={{ aspectRatio: isExpandedView ? "auto" : "16 / 9" }}>
@@ -164,8 +164,8 @@ export function GameContainer({
           </button>
 
           {/* Game Component */}
-          <div className={`w-full flex items-center justify-center overflow-hidden ${
-            isExpandedView ? "h-screen" : "h-full"
+          <div className={`w-full h-full flex items-center justify-center overflow-hidden ${
+            isExpandedView ? "h-screen" : ""
           }`}>
             {gameComponent}
           </div>
