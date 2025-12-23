@@ -20,3 +20,16 @@ export { SystemBuilder } from "./SystemBuilder";
 export { CircuitBuilder } from "./CircuitBuilder";
 export { InputOutputLab } from "./InputOutputLab";
 export { NetworkBuilder } from "./NetworkBuilder";
+
+// Finance Games
+export { PocketMoneyManager } from "./PocketMoneyManager";
+export { SmartShopperChallenge } from "./SmartShopperChallenge";
+export { SavingsGrower } from "./SavingsGrower";
+export { BankingBasicsSimulator } from "./BankingBasicsSimulator";
+export { PriceCompareMaster } from "./PriceCompareMaster";
+export { MiniBusinessTycoon } from "./MiniBusinessTycoon";
+export { DigitalMoneyExplorer } from "./DigitalMoneyExplorer";
+
+// Shared Game Components
+export { GameIntroModal } from "./GameIntroModal";
+export { GameContainer } from "./GameContainer";
