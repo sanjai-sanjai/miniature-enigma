@@ -412,8 +412,8 @@ export default function ForceBuilder() {
 
             {/* Comparison Table */}
             {Object.values(results).some((r) => r > 0) && (
-              <div className="p-4 rounded-lg bg-purple-50 border border-purple-200">
-                <h3 className="font-bold text-gray-800 mb-3">📊 Accelerations Observed</h3>
+              <div className="p-4 rounded-lg bg-muted border border-border/50">
+                <h3 className="font-bold text-foreground mb-3">📊 Accelerations Observed</h3>
                 <div className="space-y-2">
                   {Object.entries(OBJECTS).map(([key, obj]) => (
                     <div key={key} className="flex justify-between items-center">
