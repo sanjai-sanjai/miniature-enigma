@@ -217,6 +217,48 @@ export default function ReactionDetective() {
 
   const gameView = (
     <div className={`${isFullscreen ? "fixed inset-0 z-50 bg-background" : ""} flex flex-col`}>
+      <style>{`
+        @keyframes bubble-rise {
+          0% { transform: translateY(0) translateX(0); opacity: 1; }
+          100% { transform: translateY(-80px) translateX(var(--tx, 0)); opacity: 0; }
+        }
+        @keyframes heat-pulse {
+          0% { transform: scale(1) translateY(0); opacity: 0.7; }
+          100% { transform: scale(1.3) translateY(-40px); opacity: 0; }
+        }
+        @keyframes light-flash {
+          0%, 100% { opacity: 0; }
+          50% { opacity: 1; }
+        }
+        @keyframes smoke-rise {
+          0% { transform: translateY(0) scale(0.5); opacity: 0; }
+          100% { transform: translateY(-100px) scale(1.2); opacity: 0; }
+        }
+        @keyframes color-shift {
+          0% { filter: hue-rotate(0deg); }
+          100% { filter: hue-rotate(360deg); }
+        }
+        @keyframes observation-slide-up {
+          0% { transform: translateY(30px); opacity: 0; }
+          100% { transform: translateY(0); opacity: 1; }
+        }
+        .bubble {
+          animation: bubble-rise 1.5s ease-out forwards;
+        }
+        .heat-wave {
+          animation: heat-pulse 1.2s ease-out forwards;
+        }
+        .light-effect {
+          animation: light-flash 0.8s ease-in-out;
+        }
+        .smoke-particle {
+          animation: smoke-rise 2s ease-out forwards;
+        }
+        .observation-panel {
+          animation: observation-slide-up 0.5s ease-out forwards;
+        }
+      `}</style>
+
       <div className={`${isFullscreen ? "h-screen" : "h-[650px]"} flex flex-col overflow-auto`}>
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border/50">
