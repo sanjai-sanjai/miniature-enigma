@@ -144,18 +144,18 @@ export function RealLifeBudgetSurvival({ onComplete }: { onComplete: (score: num
   const allDecided = fixedExpenses.every((e) => gameState.decisions[`${gameState.day}-${e.id}`]);
 
   return (
-    <div className="w-full h-full flex flex-col bg-gradient-to-b from-primary/5 via-accent/5 to-background p-6 gap-6 overflow-auto">
+    <div className="w-full h-full flex flex-col bg-gradient-to-b from-primary/5 via-accent/5 to-background p-8 gap-8 overflow-auto">
       {/* Header */}
       <div className="max-w-4xl mx-auto w-full">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-2xl font-bold text-foreground">🏡 Real Life Budget Survival</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-3xl font-bold text-foreground">🏡 Real Life Budget Survival</h2>
           <div className="text-right">
-            <div className="text-sm text-muted-foreground">Day {gameState.day}/30</div>
+            <div className="text-sm font-medium text-muted-foreground">Day {gameState.day}/30</div>
           </div>
         </div>
 
         {/* Progress Bar */}
-        <div className="w-full h-2 bg-card rounded-full overflow-hidden">
+        <div className="w-full h-3 bg-card rounded-full overflow-hidden shadow-sm">
           <div
             className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-500"
             style={{ width: `${progress}%` }}
