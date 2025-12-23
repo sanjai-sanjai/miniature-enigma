@@ -476,7 +476,7 @@ export default function EnergyQuest() {
 
       {/* Canvas */}
       <div className={cn(
-        "rounded-lg border-2 border-gray-300 shadow-lg bg-white overflow-hidden",
+        "rounded-lg border-2 border-border shadow-lg bg-card overflow-hidden",
         isFullscreen ? "w-screen h-screen" : "w-full max-w-5xl"
       )}>
         <canvas
