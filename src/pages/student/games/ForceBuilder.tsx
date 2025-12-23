@@ -203,7 +203,7 @@ export default function ForceBuilder() {
       ctx.fill();
 
       // Force label
-      ctx.fillStyle = "#FF0000";
+      ctx.fillStyle = "#000";
       ctx.font = "bold 14px Arial";
       ctx.textAlign = "center";
       ctx.fillText(`Force: ${forceApplied}`, object.x - 30 - arrowLength / 2, OBJECT_Y - 30);
