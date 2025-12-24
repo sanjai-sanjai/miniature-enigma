@@ -86,7 +86,7 @@ export function WalletBalanceHeader({ balance, className }: WalletBalanceHeaderP
 
         @media (max-width: 640px) {
           .wallet-label {
-            font-weight: 600;
+            font-family: "Fredoka, sans-serif";
           }
         }
 
