@@ -549,13 +549,13 @@ export default function TasksPage() {
                           {isActive && (
                             <div className="mb-3 space-y-1">
                               <div className="flex items-center justify-between text-xs">
-                                <span className="font-medium text-foreground">Progress</span>
+                                <span className="font-medium text-foreground">{t('tasks.progress')}</span>
                                 <span className="text-muted-foreground">65%</span>
                               </div>
                               <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
                                 <div className="h-full bg-gradient-to-r from-accent to-accent/80 rounded-full" style={{ width: "65%" }}></div>
                               </div>
-                              <p className="text-xs text-muted-foreground">In progress...</p>
+                              <p className="text-xs text-muted-foreground">{t('tasks.inProgress')}</p>
                             </div>
                           )}
 
