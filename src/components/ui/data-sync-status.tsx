@@ -26,14 +26,14 @@ export function DataSyncStatus({ className }: DataSyncStatusProps) {
   const [lastSyncTime, setLastSyncTime] = useState<string>('');
   const [showModal, setShowModal] = useState(false);
   const [syncItems, setSyncItems] = useState<SyncItem[]>([
-    { id: '1', label: t('sync.userProgress'), icon: '📚', completed: false, failed: false },
-    { id: '2', label: t('sync.leaderboard'), icon: '🏆', completed: false, failed: false },
-    { id: '3', label: t('sync.ecoCoins'), icon: '🪙', completed: false, failed: false },
-    { id: '4', label: t('sync.subjectProgress'), icon: '📖', completed: false, failed: false },
-    { id: '5', label: t('sync.tasksVerification'), icon: '✅', completed: false, failed: false },
+    { id: '1', label: 'Learning Progress Synced', icon: '📚', completed: false, failed: false },
+    { id: '2', label: 'Leaderboard Updated', icon: '🏆', completed: false, failed: false },
+    { id: '3', label: 'EduCoins Wallet Synced', icon: '🪙', completed: false, failed: false },
+    { id: '4', label: 'Subject Progress Saved', icon: '📖', completed: false, failed: false },
+    { id: '5', label: 'Tasks & Verifications Updated', icon: '✅', completed: false, failed: false },
   ]);
 
-  // Load last sync time from localStorage on mount
+  // Load last sync time from localStorage and initialize sync items with translations
   useEffect(() => {
     const saved = localStorage.getItem('last_sync_time');
     const savedStatus = localStorage.getItem('sync_status') as SyncStatus | null;
@@ -43,7 +43,16 @@ export function DataSyncStatus({ className }: DataSyncStatusProps) {
     if (savedStatus) {
       setSyncStatus(savedStatus);
     }
-  }, []);
+
+    // Update sync items with translations
+    setSyncItems([
+      { id: '1', label: t('sync.userProgress'), icon: '📚', completed: false, failed: false },
+      { id: '2', label: t('sync.leaderboard'), icon: '🏆', completed: false, failed: false },
+      { id: '3', label: t('sync.ecoCoins'), icon: '🪙', completed: false, failed: false },
+      { id: '4', label: t('sync.subjectProgress'), icon: '📖', completed: false, failed: false },
+      { id: '5', label: t('sync.tasksVerification'), icon: '✅', completed: false, failed: false },
+    ]);
+  }, [t]);
 
   // Check internet connectivity
   const isOnline = useCallback((): boolean => {
