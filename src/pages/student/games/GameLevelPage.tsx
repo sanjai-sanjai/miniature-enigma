@@ -23,7 +23,8 @@ import { usePlayCoins } from "@/hooks/use-playcoins";
 import { useUserLevel } from "@/hooks/use-user-level";
 import { useSoundEffects } from "@/hooks/use-sound-effects";
 import { useDailyChallenges } from "@/hooks/use-daily-challenges";
-import mascotCelebration from "@/assets/mascot-celebration.png";
+
+const mascotCelebration = "https://cdn.builder.io/api/v1/image/assets%2F4ae91a7053f44487bb1768399267b2fe%2Fa2bf1f7c095e4a33a86a9e712ab77795";
 
 // Import Custom Games
 import ReactionBuilder from "./ReactionBuilder";
