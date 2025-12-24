@@ -208,28 +208,45 @@
       "voltageTraP_description": "सर्किट को नेविगेट करें और बिजली को समझें",
       "waveRider": "वेव राइडर",
       "waveRider_description": "तरंगों और दोलनों में महारत हासिल करें",
-      "forceBuilder": "फोर्स बिल्डर",
-      "forceBuilder_description": "वस्तुओं को हिलाने के लिए बल बनाएं और लागू करें",
+      "forceBuilder": {
+        "title": "फोर्स बिल्डर",
+        "description": "वस्तुओं को हिलाने के लिए बल बनाएं और लागू करें",
+        "instruction": "वस्तुओं को लक्ष्य तक ले जाने के लिए सही बल लागू करें!"
+      },
       "gravityDrop": "गुरुत्वाकर्षण ड्रॉप",
       "gravityDrop_description": "गुरुत्वाकर्षण की शक्ति का अनुभव करें",
       "energyQuest": "ऊर्जा खोज",
-      "energyQuest_description": "ऊर्जा को परिवर्तित और संरक्षित करें"
+      "energyQuest_description": "ऊर्जा को परिवर्तित और संरक्षित करें",
+      "projectileMotion": {
+        "title": "प्रक्षेप्य गति",
+        "description": "सही कोण और गति से तोप को निकालकर लक्ष्य को मारें",
+        "instruction": "तोप को लक्ष्य करें और लक्ष्यों को मारने के लिए निकालें!"
+      }
     }
   },
   "chemistry": {
     "title": "रसायन विज्ञान",
     "description": "मिलाएं, प्रतिक्रिया करें और खोजें",
     "games": {
-      "reactionDetective": "प्रतिक्रिया जासूस",
-      "reactionDetective_description": "रासायनिक प्रतिक्रियाओं को पहचानें और समझें",
+      "reactionDetective": {
+        "title": "प्रतिक्रिया जासूस",
+        "description": "रासायनिक प्रतिक्रियाओं को पहचानें और समझें",
+        "instruction": "रासायनिक प्रतिक्रियाओं को समझें!"
+      },
       "periodicTable": "आवर्त सारणी",
       "periodicTable_description": "तत्वों और उनके गुणों की खोज करें",
-      "moleculeBuilder": "अणु निर्माता",
-      "moleculeBuilder_description": "परमाणुओं से अणु बनाएं",
+      "moleculeBuilder": {
+        "title": "अणु निर्माता",
+        "description": "परमाणुओं से अणु बनाएं",
+        "instruction": "परमाणुओं को जोड़कर अणु बनाएं!"
+      },
       "propertyPuzzle": "संपत्ति पहेली",
       "propertyPuzzle_description": "सामग्रियों को उनके गुणों से मिलाएं",
-      "equationBuilder": "समीकरण निर्माता",
-      "equationBuilder_description": "रासायनिक समीकरणों को संतुलित करें"
+      "equationBuilder": {
+        "title": "समीकरण निर्माता",
+        "description": "रासायनिक समीकरणों को संतुलित करें",
+        "instruction": "रासायनिक समीकरणों को संतुलित करें!"
+      }
     }
   },
   "biology": {
@@ -276,6 +293,11 @@
         "title": "सिस्टम बिल्डर",
         "description": "सही क्रम के साथ सिस्टम बनाएं",
         "instruction": "हर सिस्टम के चरण हैं जो सही क्रम में होने चाहिए"
+      },
+      "villageLightUp": {
+        "title": "गांव रोशनी",
+        "description": "सर्किट पूरा करने के लिए वायर टाइलों को घुमाएं और लाइटें चलाएं",
+        "instruction": "सभी घरों को रोशन करने के लिए विद्युत सर्किट पूरा करें!"
       }
     },
     "activeLearning": {
