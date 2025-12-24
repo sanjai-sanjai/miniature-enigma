@@ -136,17 +136,17 @@ export default function StudentDashboard() {
           <div className="glass-card rounded-xl p-3 text-center border border-border">
             <Clock className="h-5 w-5 text-primary mx-auto mb-1" />
             <p className="font-heading text-lg font-bold text-foreground">2.5h</p>
-            <p className="text-xs text-muted-foreground">Today</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.todayHours')}</p>
           </div>
           <div className="glass-card rounded-xl p-3 text-center border border-border">
             <Flame className="h-5 w-5 text-destructive mx-auto mb-1" />
             <p className="font-heading text-lg font-bold text-foreground">{currentStreak}</p>
-            <p className="text-xs text-muted-foreground">Day Streak</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.dayStreak')}</p>
           </div>
           <div className="glass-card rounded-xl p-3 text-center border border-border">
             <Trophy className="h-5 w-5 text-accent mx-auto mb-1" />
             <p className="font-heading text-lg font-bold text-foreground">{unlockedCount}</p>
-            <p className="text-xs text-muted-foreground">Badges</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.badges')}</p>
           </div>
         </div>
 
