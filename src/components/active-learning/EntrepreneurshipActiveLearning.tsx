@@ -8,10 +8,10 @@ interface ModuleProps {
 
 function ActiveLearningModule({ title, goal, children }: ModuleProps) {
   return (
-    <div className="rounded-xl border border-border bg-card p-5">
+    <div className="glass-card rounded-xl border border-border p-5">
       <h4 className="font-heading font-semibold text-foreground mb-1">{title}</h4>
       <p className="text-xs text-muted-foreground mb-4">{goal}</p>
-      <div className="bg-primary/5 rounded-lg p-4 min-h-32">
+      <div className="glass-card rounded-lg p-4 min-h-32 border border-border/50">
         {children}
       </div>
     </div>
