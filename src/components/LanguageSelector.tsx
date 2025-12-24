@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Check, X } from 'lucide-react';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
+import { useI18n } from '@/contexts/I18nContext';
 
 interface LanguageSelectorProps {
   isOpen: boolean;
