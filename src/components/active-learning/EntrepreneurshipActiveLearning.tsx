@@ -228,7 +228,7 @@ function CostVsProfitSlider() {
         </div>
 
         {/* Summary */}
-        <div className="glass-card bg-card/50 p-3 rounded-lg space-y-1 text-sm border border-border/30">
+        <div className="glass-card p-3 rounded-lg space-y-1 text-sm border border-border/50">
           <div className="flex justify-between">
             <span className="text-muted-foreground">Profit per item:</span>
             <span className="font-bold text-primary">₹{profitPerItem}</span>
