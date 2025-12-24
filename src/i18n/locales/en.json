@@ -36,6 +36,16 @@
     "logout": "Logout",
     "settings": "Settings"
   },
+  "dashboard": {
+    "greeting": "Hey {name}! 👋",
+    "readyForAdventure": "Ready for today's adventure!",
+    "todayHours": "Today",
+    "dayStreak": "Day Streak",
+    "badges": "Badges",
+    "subjects": "Subjects",
+    "dailyChallenges": "Daily Challenges",
+    "weeklyChallenges": "Weekly Challenges"
+  },
   "sync": {
     "lastSynced": "Last synced",
     "syncing": "Syncing...",
