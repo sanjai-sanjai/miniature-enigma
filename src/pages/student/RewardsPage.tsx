@@ -383,14 +383,14 @@ export default function RewardsPage() {
               <div className="balance-card-primary">
                 {/* Left Column: Text Content */}
                 <div className="balance-content">
-                  <div className="balance-label">Balance</div>
+                  <div className="balance-label">{t('rewards.balance')}</div>
                   <div className="balance-amount-row">
                     <span className="balance-amount">{currentBalance.toLocaleString()}</span>
                     <div className="balance-coin">
                       <EduCoin size="lg" imgClassName="edu-coin-balance-lg" />
                     </div>
                   </div>
-                  <div className="balance-unit">EduCoins</div>
+                  <div className="balance-unit">{t('rewards.eduCoins')}</div>
                 </div>
 
                 {/* Right Column: Mascot Illustration */}
