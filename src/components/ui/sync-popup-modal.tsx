@@ -92,7 +92,7 @@ export function SyncPopupModal({
                   <div
                     className={cn(
                       'absolute inset-0 rounded-full',
-                      'border-4 border-transparent border-t-blue-500 border-r-blue-500',
+                      'border-4 border-transparent border-t-blue-400 border-r-blue-400',
                       'animate-spin'
                     )}
                   />
@@ -100,17 +100,17 @@ export function SyncPopupModal({
               </div>
             ) : isSuccess && !hasFailedItems ? (
               <div className="flex justify-center mb-4">
-                <CheckCircle2 className="w-12 h-12 text-green-500 animate-bounce-in" />
+                <CheckCircle2 className="w-12 h-12 text-green-400 animate-bounce-in" />
               </div>
             ) : hasFailedItems ? (
               <div className="flex justify-center mb-4">
-                <AlertCircle className="w-12 h-12 text-amber-500 animate-pop" />
+                <AlertCircle className="w-12 h-12 text-amber-400 animate-pop" />
               </div>
             ) : null}
 
             <h2 className={cn(
               'text-xl sm:text-2xl font-heading font-bold',
-              'text-foreground mb-2'
+              'text-white mb-2'
             )}>
               {isSyncing
                 ? t('sync.syncing')
@@ -122,7 +122,7 @@ export function SyncPopupModal({
             </h2>
 
             {!isSyncing && (
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-gray-300">
                 {isSuccess && !hasFailedItems
                   ? t('sync.successSubtitle')
                   : hasFailedItems
