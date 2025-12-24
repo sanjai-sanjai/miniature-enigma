@@ -71,11 +71,25 @@ export function WalletBalanceHeader({ balance, className }: WalletBalanceHeaderP
           color: rgb(16, 183, 127);
         }
 
+        @media (max-width: 640px) {
+          .wallet-amount {
+            font-family: "Fredoka, sans-serif";
+            font-weight: 600;
+          }
+        }
+
         .wallet-label {
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           font-weight: 500;
           font-size: 0.875rem;
           color: rgb(138, 148, 168);
+        }
+
+        @media (max-width: 640px) {
+          .wallet-label {
+            font-family: "Fredoka, sans-serif";
+            font-weight: 600;
+          }
         }
 
         /* Mobile: Reduce coin size to 20px */

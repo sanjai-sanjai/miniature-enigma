@@ -43,8 +43,8 @@ export default function StudentDashboard() {
   const { userAchievements, checkAchievements, unlockedCount } = useAchievements();
   const { playAchievement } = useSoundEffects();
   const { wallet } = usePlayCoins();
-  const { currentStreak } = useStreak();
-  
+  const { currentStreak, updateStreak, isActiveToday } = useStreak();
+
   const [showAchievement, setShowAchievement] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [latestAchievement, setLatestAchievement] = useState<{
@@ -62,6 +62,13 @@ export default function StudentDashboard() {
     const onboardingComplete = localStorage.getItem("onboarding_complete");
     if (!onboardingComplete) {
       setShowOnboarding(true);
+    }
+  }, []);
+
+  // Update streak when dashboard loads
+  useEffect(() => {
+    if (!isActiveToday) {
+      updateStreak();
     }
   }, []);
 

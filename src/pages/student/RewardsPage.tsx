@@ -122,6 +122,12 @@ export default function RewardsPage() {
           letter-spacing: 0.3px;
         }
 
+        @media (max-width: 640px) {
+          .balance-label {
+            font-family: "Nunito, sans-serif";
+          }
+        }
+
         .balance-amount-row {
           display: flex;
           align-items: baseline;
@@ -150,6 +156,12 @@ export default function RewardsPage() {
           font-size: 14px;
           font-weight: 400;
           line-height: 20px;
+        }
+
+        @media (max-width: 640px) {
+          .balance-unit {
+            font-family: "Nunito, sans-serif";
+          }
         }
 
         .balance-mascot-img {

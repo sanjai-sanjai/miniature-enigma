@@ -27,6 +27,8 @@ const RewardsPage = lazy(() => import("./pages/student/RewardsPage"));
 const ProgressPage = lazy(() => import("./pages/student/ProgressPage"));
 const ProfilePage = lazy(() => import("./pages/student/ProfilePage"));
 const ProfileSettingsPage = lazy(() => import("./pages/student/ProfileSettingsPage"));
+const HelpPage = lazy(() => import("./pages/student/HelpPage"));
+const SettingsPage = lazy(() => import("./pages/student/SettingsPage"));
 const LearningModeSelectionPage = lazy(() => import("./pages/student/LearningModeSelectionPage"));
 const PassiveLearningPage = lazy(() => import("./pages/student/PassiveLearningPage"));
 const PhysicsSubjectPage = lazy(() => import("./pages/student/subjects/PhysicsSubjectPage"));
@@ -318,6 +320,16 @@ const App = () => (
                 <Route path="/student/profile/settings" element={
                   <ProtectedRoute allowedRoles={["student"]}>
                     <ProfileSettingsPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/help" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <HelpPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/settings" element={
+                  <ProtectedRoute allowedRoles={["student"]}>
+                    <SettingsPage />
                   </ProtectedRoute>
                 } />
                 {/* Learning Mode Selection - New Flow */}

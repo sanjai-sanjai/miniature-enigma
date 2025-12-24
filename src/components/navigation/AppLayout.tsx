@@ -3,6 +3,7 @@ import { HamburgerMenu } from "./HamburgerMenu";
 import { BottomTabBar } from "./BottomTabBar";
 import { AppBreadcrumb } from "./AppBreadcrumb";
 import { WalletBalanceHeader } from "@/components/ui/wallet-balance-header";
+import { LanguageSwitcherButton } from "@/components/ui/language-switcher-button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useWallet } from "@/contexts/WalletContext";
 import { cn } from "@/lib/utils";
@@ -58,10 +59,16 @@ export function AppLayout({
               )}
             </div>
 
-            {/* Wallet Balance for students */}
-            {role === "student" && typeof displayCoins === "number" && (
-              <WalletBalanceHeader balance={displayCoins} />
-            )}
+            {/* Right side actions */}
+            <div className="flex items-center gap-2">
+              {/* Language Switcher - Available for all roles */}
+              <LanguageSwitcherButton />
+
+              {/* Wallet Balance for students */}
+              {role === "student" && typeof displayCoins === "number" && (
+                <WalletBalanceHeader balance={displayCoins} />
+              )}
+            </div>
           </div>
 
           {/* Breadcrumb */}
